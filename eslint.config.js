@@ -7,5 +7,8 @@ configs(
     nextjs: true,
     react: true,
     formatters: true,
+    rules: {
+      'next/no-html-link-for-pages': 'off',
+    },
   },
 )
