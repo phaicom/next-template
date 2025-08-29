@@ -42,7 +42,7 @@ importers:
         specifier: ^2.13.1
         version: 2.13.1
 
-  apps/my-app:
+  apps/web:
     dependencies:
       next:
         specifier: 15.5.2
@@ -54,6 +54,9 @@ importers:
         specifier: 19.1.0
         version: 19.1.0(react@19.1.0)
     devDependencies:
+      '@next-template/typescript-config':
+        specifier: workspace:*
+        version: link:../../packages/typescript-config
       '@tailwindcss/postcss':
         specifier: ^4.1.12
         version: 4.1.12
@@ -72,6 +75,8 @@ importers:
       typescript:
         specifier: ^5.9.2
         version: 5.9.2
+
+  packages/typescript-config: {}
 
 packages:
 
